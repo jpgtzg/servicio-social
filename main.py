@@ -39,10 +39,10 @@ def mostrar_palabras():
     placeholder.write("### Palabras para memorizar:")
     # Show words as normal text
     placeholder.markdown("**" + ", ".join(st.session_state["secuencia"]) + "**")
-    st.write("El temporizador ha comenzado. Tendrá 5 segundos para memorizar...")
+    st.write("El temporizador ha comenzado. Tendrá 15 segundos para memorizar...")
 
     # Pause for the specified time
-    time.sleep(5)  # Change this to 15 seconds for the actual game
+    time.sleep(15)  # Change this to 15 seconds for the actual game
     # Clear the placeholder after 15 seconds
     placeholder.empty()
 
